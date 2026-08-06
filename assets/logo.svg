@@ -1,18 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" role="img" aria-label="Razorbee">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1d6fd8"/>
-      <stop offset="50%" stop-color="#1db954"/>
-      <stop offset="100%" stop-color="#e4283a"/>
-    </linearGradient>
-  </defs>
-  <!-- triple crescent mark -->
-  <g transform="translate(4,4)">
-    <path d="M20 2a18 18 0 1 0 0 36 18 18 0 0 0 0-36zm0 6a12 12 0 1 1 0 24 12 12 0 0 1 0-24z" fill="#1d6fd8" opacity=".95"/>
-    <path d="M22 6a14 14 0 1 0 0 28 14 14 0 0 0 0-28zm0 5a9 9 0 1 1 0 18 9 9 0 0 1 0-18z" fill="#1db954"/>
-    <path d="M24 10a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 4a6 6 0 1 1 0 12 6 6 0 0 1 0-12z" fill="#e4283a"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 52" fill="none" role="img" aria-label="Razorbee">
+  <!-- Mark: three nested arcs (brand colors) -->
+  <g transform="translate(2 2)">
+    <path d="M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20" stroke="#2346A0" stroke-width="7" stroke-linecap="round"/>
+    <path d="M24 10C16.268 10 10 16.268 10 24s6.268 14 14 14" stroke="#00A651" stroke-width="7" stroke-linecap="round"/>
+    <path d="M24 16c-4.418 0-8 3.582-8 8s3.582 8 8 8" stroke="#E4283A" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="24" cy="24" r="3.5" fill="#E4283A"/>
   </g>
-  <text x="52" y="31" font-family="Syne, Outfit, Arial Black, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.5">
-    <tspan fill="#ffffff">RAZOR</tspan><tspan fill="#e4283a">BEE</tspan>
+  <text x="58" y="35" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="26" font-weight="800" letter-spacing="-1.2">
+    <tspan fill="#12141A">RAZOR</tspan><tspan fill="#E4283A">BEE</tspan>
   </text>
 </svg>

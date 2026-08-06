@@ -1,4 +1,9 @@
-/* Always point pretty paths to multi-page HTML */
+# Multi-page Razorbee static site
+
+[build]
+  publish = "."
+  command = "echo 'Razorbee multi-page static site'"
+
 [[redirects]]
   from = "/software"
   to = "/software.html"
@@ -35,7 +40,3 @@
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-
-[build]
-  publish = "."
-  command = "echo 'Razorbee multi-page static site'"

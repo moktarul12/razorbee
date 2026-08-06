@@ -1,6 +1,33 @@
-[build]
-  publish = "."
-  command = "echo 'Static Razorbee site'"
+/* Always point pretty paths to multi-page HTML */
+[[redirects]]
+  from = "/software"
+  to = "/software.html"
+  status = 301
+
+[[redirects]]
+  from = "/ai"
+  to = "/ai.html"
+  status = 301
+
+[[redirects]]
+  from = "/products"
+  to = "/products.html"
+  status = 301
+
+[[redirects]]
+  from = "/clients"
+  to = "/clients.html"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 301
 
 [[headers]]
   for = "/*"
@@ -9,7 +36,6 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
-[[redirects]]
-  from = "/home"
-  to = "/"
-  status = 301
+[build]
+  publish = "."
+  command = "echo 'Razorbee multi-page static site'"

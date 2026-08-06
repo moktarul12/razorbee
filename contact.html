@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Razorbee</title>
+  <meta name="description" content="Contact Razorbee Online Solutions — software, AI/ML, and product projects. Bangalore. sales@razorbee.com">
+  <meta name="theme-color" content="#06080e">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+  <header class="site-header" id="site-header"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="crumb"><a href="index.html">Studio</a> / Contact</div>
+        <span class="ribbon red">Signal</span>
+        <h1>Tell us what you're <em>building.</em></h1>
+        <p>Software platform, AI roadmap, or a product your market needs — leave a brief and we’ll reply fast.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="reveal">
+            <div class="kicker">Reach us</div>
+            <h2 class="display">Studio line</h2>
+            <p class="lede" style="margin:12px 0 24px">Razorbee Online Solutions Pvt Ltd</p>
+            <div class="cinfo">
+              <i class="fas fa-location-dot"></i>
+              <div>
+                Gaurav Building, 157/1, 2nd Floor<br>
+                Manipal County Rd, AECS C Block<br>
+                Singasandra, Bengaluru 560068
+              </div>
+            </div>
+            <div class="cinfo">
+              <i class="fas fa-phone"></i>
+              <div><a href="tel:+919148688883">+91 91486 88883</a></div>
+            </div>
+            <div class="cinfo">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <a href="mailto:sales@razorbee.com">sales@razorbee.com</a><br>
+                <a href="mailto:support@razorbee.com">support@razorbee.com</a>
+              </div>
+            </div>
+          </div>
+
+          <form class="form reveal reveal-d1" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <p class="sr-only"><label>Don’t fill this out <input name="bot-field"></label></p>
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" required placeholder="Your name" autocomplete="name">
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required placeholder="you@company.com" autocomplete="email">
+              </div>
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input id="company" name="company" placeholder="Organisation (optional)">
+            </div>
+            <div class="field">
+              <label for="interest">Interest</label>
+              <select id="interest" name="interest">
+                <option>Engineering / software</option>
+                <option>AI / Machine Learning</option>
+                <option>Product build</option>
+                <option>CapItCap-style platform</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Project brief</label>
+              <textarea id="message" name="message" required placeholder="What should we build?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-red">Send message <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="js/layout.js"></script>
+</body>
+</html>

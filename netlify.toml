@@ -1,22 +1,12 @@
-# Multi-page Razorbee static site
+# Razorbee static site
 
 [build]
   publish = "."
-  command = "echo 'Razorbee multi-page static site'"
+  command = "echo 'Razorbee static site'"
 
 [[redirects]]
-  from = "/software"
-  to = "/software.html"
-  status = 301
-
-[[redirects]]
-  from = "/ai"
-  to = "/ai.html"
-  status = 301
-
-[[redirects]]
-  from = "/products"
-  to = "/products.html"
+  from = "/services"
+  to = "/services.html"
   status = 301
 
 [[redirects]]
@@ -32,6 +22,11 @@
 [[redirects]]
   from = "/contact"
   to = "/contact.html"
+  status = 301
+
+[[redirects]]
+  from = "/products"
+  to = "/clients.html"
   status = 301
 
 [[headers]]

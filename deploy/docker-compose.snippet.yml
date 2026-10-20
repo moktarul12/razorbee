@@ -1,0 +1,7 @@
+# Add under services: in /opt/apps/docker-compose.yml
+  razorbee:
+    build:
+      context: ./razorbee
+    ports:
+      - "4103:80"
+    restart: unless-stopped

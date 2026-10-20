@@ -1,0 +1,7 @@
+.git
+.netlify
+.DS_Store
+node_modules
+*.md
+deploy/deploy-vps.sh
+deploy/docker-compose.snippet.yml

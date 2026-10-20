@@ -1,22 +1,18 @@
-# Razorbee website
+# Razorbee
 
-Modern static site for Razorbee Online Solutions — software development, AI/ML, and products.
+Global software company site — mobile apps, DevOps, software consulting, and crypto. Registered office Kolkata · Studio Bangalore · Australia & worldwide.
 
-## Featured client
-- [CapItCap](https://capitcap.com/) — boutique equity crowdfunding platform
-
-## Stack
-- Static HTML / CSS / JS
-- Deployed on Netlify (`razorbee.com`)
-
-## Local preview
-Open `index.html` or:
-
+## Preview
 ```bash
 npx serve .
 ```
 
-## Deploy
+## Deploy (VPS)
 ```bash
-netlify deploy --prod
+./deploy/deploy-vps.sh
 ```
+
+Live: http://162.35.175.150:4103/
+
+## Note on logos
+`razorbee_logo.png` has black “RAZOR” text (invisible on dark). The live site uses `assets/logo-white.png`.

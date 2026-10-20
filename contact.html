@@ -4,44 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Razorbee</title>
-  <meta name="description" content="Contact Razorbee Online Solutions — software, AI/ML, and product projects. sales@razorbee.com · Bangalore.">
-  <meta name="theme-color" content="#f3f4f7">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Contact Razorbee — global software company. Registered office Kolkata · Studio Bangalore. anam@razorbee.com">
+  <meta name="theme-color" content="#07080c">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
   <header class="site-header" id="site-header"></header>
   <main>
     <section class="page-hero">
       <div class="wrap">
-        <p class="bread"><a href="index.html">Home</a> / Contact</p>
+        <p class="bread"><a href="/">Home</a> / Contact</p>
+        <div class="brand-bar" aria-hidden="true"><i></i><i></i><i></i></div>
         <h1>Tell us what you're <em>building.</em></h1>
-        <p>Software, AI, or a full product — leave a short brief and we’ll respond quickly.</p>
+        <p>Mobile, DevOps, consulting, or crypto — leave a short global brief.</p>
       </div>
     </section>
     <section class="section">
       <div class="wrap">
         <div class="contact-grid">
           <div class="reveal">
-            <p class="eyebrow">Studio</p>
-            <h2 class="h2">Razorbee Online Solutions Pvt Ltd</h2>
+            <p class="eyebrow">Reach us</p>
+            <h2 class="h2">Razorbee</h2>
             <div class="info-line">
               <span aria-hidden="true">—</span>
-              <div>Gaurav Building, 157/1, 2nd Floor, Manipal County Rd,<br>AECS C Block, Singasandra, Bengaluru 560068</div>
-            </div>
-            <div class="info-line">
-              <span aria-hidden="true">—</span>
-              <div><a href="tel:+919148688883">+91 91486 88883</a></div>
+              <div>
+                <strong style="color:#fff;font-weight:600">Registered office</strong><br>
+                Kolkata, West Bengal, India
+              </div>
             </div>
             <div class="info-line">
               <span aria-hidden="true">—</span>
               <div>
-                <a href="mailto:sales@razorbee.com">sales@razorbee.com</a><br>
-                <a href="mailto:support@razorbee.com">support@razorbee.com</a>
+                <strong style="color:#fff;font-weight:600">Delivery studio</strong><br>
+                #415 KHB Colony, Koramangala 5th Block<br>Bangalore 560095, Karnataka, India
               </div>
+            </div>
+            <div class="info-line">
+              <span aria-hidden="true">—</span>
+              <div><a href="mailto:anam@razorbee.com">anam@razorbee.com</a></div>
+            </div>
+            <div class="info-line">
+              <span aria-hidden="true">—</span>
+              <div>Global orbit · Kolkata · Bangalore · Sydney · Singapore · Dubai · London · New York</div>
             </div>
           </div>
           <form class="form reveal d1" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
@@ -57,23 +65,38 @@
                 <input id="email" name="email" type="email" required autocomplete="email">
               </div>
             </div>
-            <div class="field">
-              <label for="company">Company</label>
-              <input id="company" name="company">
+            <div class="form-row">
+              <div class="field">
+                <label for="company">Company</label>
+                <input id="company" name="company">
+              </div>
+              <div class="field">
+                <label for="region">Region</label>
+                <select id="region" name="region">
+                  <option>India</option>
+                  <option>Australia</option>
+                  <option>APAC</option>
+                  <option>MENA</option>
+                  <option>Europe</option>
+                  <option>Americas</option>
+                  <option>Other</option>
+                </select>
+              </div>
             </div>
             <div class="field">
               <label for="interest">Interest</label>
               <select id="interest" name="interest">
-                <option>Software development</option>
-                <option>AI / Machine Learning</option>
-                <option>Product build</option>
-                <option>CapItCap-style platform</option>
+                <option>Mobile apps</option>
+                <option>DevOps</option>
+                <option>Software consulting</option>
+                <option>Cryptocurrency / Web3</option>
+                <option>Full product build</option>
                 <option>Other</option>
               </select>
             </div>
             <div class="field">
               <label for="message">Project brief</label>
-              <textarea id="message" name="message" required placeholder="What should we build?"></textarea>
+              <textarea id="message" name="message" required placeholder="What should we build, and where does it need to ship?"></textarea>
             </div>
             <button type="submit" class="btn btn-solid">Send message</button>
           </form>
@@ -82,6 +105,6 @@
     </section>
   </main>
   <footer class="site-footer" id="site-footer"></footer>
-  <script src="js/layout.js"></script>
+  <script src="/js/layout.js"></script>
 </body>
 </html>

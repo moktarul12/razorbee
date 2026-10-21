@@ -2,21 +2,32 @@
   const raw = (location.pathname.replace(/\/+$/, "") || "/").replace(/\.html$/, "");
   const page = raw === "/" ? "index" : raw.split("/").pop();
 
+  const groups = {
+    services: ["services", "mobile", "devops", "consulting", "crypto", "method", "technology"],
+    clients: ["clients", "capitcap", "metrohaus", "manasum", "manavsathi", "dromominds"],
+    industries: ["industries", "fintech", "proptech", "healthcare", "impact", "lifesciences"],
+    locations: ["locations"],
+    insights: ["insights", "essay-release", "essay-cadence", "essay-trust", "essay-timezones"],
+    about: ["about"],
+  };
+
   const items = [
-    { href: "/services", id: "services", label: "Services" },
-    { href: "/clients", id: "clients", label: "Clients" },
+    { href: "/services", id: "services", label: "Craft" },
+    { href: "/clients", id: "clients", label: "Work" },
+    { href: "/industries", id: "industries", label: "Industries" },
+    { href: "/locations", id: "locations", label: "World" },
+    { href: "/insights", id: "insights", label: "Journal" },
     { href: "/about", id: "about", label: "About" },
-    { href: "/contact", id: "contact", label: "Contact" },
   ];
 
-  const active = (id) => (page === id ? " active" : "");
+  const active = (id) => ((groups[id] || []).includes(page) ? " active" : "");
 
   const header = document.getElementById("site-header");
   if (header) {
     header.innerHTML = `
       <div class="nav-inner">
         <a class="brand" href="/" aria-label="Razorbee home">
-          <img src="/assets/logo-white.png" alt="Razorbee" width="200" height="60">
+          <img src="/assets/logo.png" alt="Razorbee" width="200" height="60">
         </a>
         <nav class="nav-links" id="nav" aria-label="Primary">
           ${items.map((i) => `<a href="${i.href}" class="${active(i.id).trim()}">${i.label}</a>`).join("")}
@@ -32,31 +43,50 @@
       <div class="wrap">
         <div class="foot-grid">
           <div>
-            <a class="brand" href="/"><img src="/assets/logo-white.png" alt="Razorbee" width="180" height="54"></a>
+            <a class="brand" href="/"><img src="/assets/logo-white.png" alt="Razorbee" width="200" height="48"></a>
             <p>Global software company — mobile, DevOps, consulting, crypto. Excellent · Innovative · Elegant.</p>
             <p class="foot-addr"><strong style="color:#c5cad6;font-weight:600">Registered office</strong><br>Kolkata, West Bengal, India</p>
             <p class="foot-addr"><strong style="color:#c5cad6;font-weight:600">Studio</strong><br>#415 KHB Colony, Koramangala 5th Block<br>Bangalore 560095, Karnataka</p>
             <p class="foot-addr"><a href="mailto:anam@razorbee.com">anam@razorbee.com</a></p>
           </div>
           <div class="col">
-            <h4>Services</h4>
-            <a href="/services#mobile">Mobile apps</a>
-            <a href="/services#devops">DevOps</a>
-            <a href="/services#consulting">Software consulting</a>
-            <a href="/services#crypto">Cryptocurrency</a>
+            <h4>Craft</h4>
+            <a href="/mobile">Mobile apps</a>
+            <a href="/devops">DevOps</a>
+            <a href="/consulting">Consulting</a>
+            <a href="/crypto">Crypto</a>
+            <a href="/method">How we work</a>
+            <a href="/technology">Technology</a>
           </div>
           <div class="col">
-            <h4>Company</h4>
-            <a href="/clients">Clients</a>
-            <a href="/clients#testimonials">Testimonials</a>
+            <h4>Industries</h4>
+            <a href="/fintech">Fintech</a>
+            <a href="/proptech">Proptech</a>
+            <a href="/healthcare">Healthcare</a>
+            <a href="/impact">Impact</a>
+            <a href="/lifesciences">Life sciences</a>
+            <a href="/industries">All industries</a>
+          </div>
+          <div class="col">
+            <h4>Work &amp; journal</h4>
+            <a href="/capitcap">CapItCap</a>
+            <a href="/metrohaus">METRÕ &amp; HäUS</a>
+            <a href="/manasum">Manasum</a>
+            <a href="/manavsathi">ManavSathi</a>
+            <a href="/dromominds">DromoMinds</a>
+            <a href="/insights">Journal</a>
+          </div>
+          <div class="col">
+            <h4>World</h4>
+            <a href="/locations#kolkata">Kolkata</a>
+            <a href="/locations#bangalore">Bangalore</a>
+            <a href="/locations#sydney">Sydney</a>
+            <a href="/locations#singapore">Singapore</a>
+            <a href="/locations#dubai">Dubai</a>
+            <a href="/locations#london">London</a>
+            <a href="/locations#newyork">New York</a>
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
-          </div>
-          <div class="col">
-            <h4>Global</h4>
-            <a href="/about">Kolkata · Bangalore</a>
-            <a href="/clients">Sydney · Singapore</a>
-            <a href="/clients">Dubai · London · NY</a>
           </div>
         </div>
         <div class="foot-bottom">
